@@ -1,0 +1,13 @@
+1.
+Url - 
+Method - get/post/put/delete -> drop down list
+Data -> 
+Submit
+------> Display (httpRequest ...)
+
+2. Specific
+Get -> https://reqres.in/api/users?page=
+	Two buttons -> 1 and 2
+	Show table 
+	id 	email first_name last_name  image
+	7	m		m			m		button (show_image)

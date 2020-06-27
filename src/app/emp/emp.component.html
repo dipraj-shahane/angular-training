@@ -1,0 +1,19 @@
+EmpNo:<input type="number" [(ngModel)]="emp.empno" style="margin-right: 20px;"/>
+Ename:<input type="text" [(ngModel)]="emp.ename" style="margin-right: 20px;"/>
+Salary:<input type="number" [(ngModel)]="emp.salary" style="margin-right: 20px;"/>
+<input type="button" (click)="add()" value="Add Employee" style="margin-right: 20px;"/>
+<br/>
+{{emp|json}}
+<br/>
+<table border="1" bgcolor="cyan" *ngIf="emparr.length">
+    <thead>
+        <th>Empno</th>
+        <th>Ename</th>
+        <th>Salary</th>
+    </thead>
+    <tr *ngFor="let emp of emparr">
+        <td>{{emp.empno}}</td>
+        <td>{{emp.ename}}</td>
+        <td>{{emp.salary}}</td>
+    </tr>
+</table>

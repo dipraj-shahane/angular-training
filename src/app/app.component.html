@@ -1,0 +1,30 @@
+<app-app2></app-app2>
+<hr />
+
+<h2>Title: {{title}} </h2>
+<img [src]="filename" /><br />
+<input type="button" value="Chane Title and Image" (click)="method1()" />
+<hr />
+
+<app-emp></app-emp>
+<hr />
+
+Name : <input type="text" [(ngModel)]="name" style="margin-left: 15px;" />
+Marks : <input type="text" [(ngModel)]="marks" style="margin-left: 15px;" /><br />
+<h1>In App Component - Name - {{name}}, Marks = {{marks}}</h1>
+<span *ngIf="message != ''" style="color:crimson;">{{message}}</span>
+<hr />
+<app-grade mrks="{{marks}}" (wrongMarks)="myhandler($event)"></app-grade>
+<hr />
+
+<input type="button" value="Fetch data from Server" (click)="handleFetch()" />
+{{obj.email}}
+
+<img [src]="obj.avatar" />
+<br />
+<input type="button" value="Send data to Server" (click)="handleSend()" />
+
+<hr>
+<app-one></app-one>
+<app-two></app-two>
+<app-three></app-three>
